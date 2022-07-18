@@ -1,4 +1,23 @@
 .container {
     display: flex;
     flex-direction: column;
+    width: 40%;
+}
+.entryForm {
+    width: 40%;
+}
+body{
+    background-color: darkslategray;
+    color: white;
+}
+h2 {
+    background-color: #080808;
+    width: 40%;
+    text-align: center;
+}
+.corgi {
+    display: inline-block;
+    width: 15%;
+    float: right;
+    margin-right: 30%;
 }
