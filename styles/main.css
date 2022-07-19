@@ -1,3 +1,4 @@
+/* font-family: 'Josefin Sans', sans-serif; */
 .container {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     width: 40%;
 }
 body{
+    font-family: 'Josefin Sans', sans-serif;
     background-color: darkslategray;
     color: white;
 }
@@ -20,4 +22,7 @@ h2 {
     width: 15%;
     float: right;
     margin-right: 30%;
+}
+.submitButton {
+    margin: 10px;
 }
