@@ -1,1 +1,1 @@
-# E20-dailyJournal
+# Holden-dailyJournal
