@@ -1,28 +1,86 @@
 /* font-family: 'Josefin Sans', sans-serif; */
 .container {
     display: flex;
-    flex-direction: column;
-    width: 40%;
+    flex-wrap: wrap;
+    justify-content: space-evenly
 }
 .entryForm {
-    width: 40%;
+    width: 17em;
+    outline: 3px solid grey;
+    outline-offset:5px;
+    border-radius: 0.5em;
+    background-color: #080808;
+    margin: 5px;
 }
 body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: darkslategray;
     color: white;
 }
+h1 {
+    height: 30px;
+    background-color: #080808;
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 3px solid grey;
+    outline-offset:5px;
+    border-radius: 0.5em;
+    padding-bottom: 5px;
+}
 h2 {
+    height: 30px;
     background-color: #080808;
     width: 40%;
     text-align: center;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 3px solid grey;
+    outline-offset:5px;
+    border-radius: 0.5em;
 }
 .corgi {
-    display: inline-block;
-    width: 15%;
-    float: right;
-    margin-right: 30%;
+    width: 17em;
 }
 .submitButton {
+    margin: 10px;
+}
+.singleQuote{
+    width: 250px;
+    margin: 10px;
+    background-color: black;
+    outline: 3px solid grey;
+    outline-offset:5px;
+    border-radius: 0.5em;
+    padding: 10px 20px;
+}
+.journalContainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.entryButtons {
+    background-color: #26282B;
+    color: white;
+}
+.entryButtons:hover{
+    background-color: grey;
+}
+#removeButton {
+float: right;
+}
+
+#editButton {
+float: left;
+}
+
+.formEntrys{
     margin: 10px;
 }
