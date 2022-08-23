@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,46 +14,48 @@
 <header>
     <title>Holdens Daily Journal</title>
 </header>
+
 <body>
     <h1>Holden's Daily Journal</h1>
-        <div class="container">
+    <div class="container">
         <form class="entryForm">
             <div class="formEntrys">
                 <div><label for="entryData">Date</label></div>
                 <input type="date" name="entryDate" class="entryForm_date">
             </div>
-        
+
             <div class="formEntrys">
                 <div><label for="conceptCovered">Concepts Covered</label></div>
                 <input type="text" name="conceptCovered" class="entryForm_date">
             </div>
-        
+
             <div class="formEntrys">
                 <div><label for="journalBox">Journal Entry</label></div>
                 <textarea name="journalEntry" class="journalEntry"></textarea>
             </div>
-        
+
             <div class="formEntrys">
-            <div><label for="todaysMood">Mood for today</label></div>
-            <select name ="Moods" class="myMoods">
-                <option value="happy">Happy! 😊</option>
-                <option value="sad">Sad! 😢</option>
-                <option value="excited">Excited! 😁</option>
-                <option value="upset">Upset! 😒</option>
-                <option value="hungry">Confused! 🤔</option>
-                <option value="sleepy">Sleepy! 🐱‍👤</option>
-            </select>
-        </div>
+                <div><label for="todaysMood">Mood for today</label></div>
+                <select name="Moods" class="myMoods">
+                    <option value="happy">Happy! 😊</option>
+                    <option value="sad">Sad! 😢</option>
+                    <option value="excited">Excited! 😁</option>
+                    <option value="upset">Upset! 😒</option>
+                    <option value="hungry">Confused! 🤔</option>
+                    <option value="sleepy">Sleepy! 🐱‍👤</option>
+                </select>
+            </div>
             <input type="submit" name=" sbutton" class="submitButton" value="Submit Button Here">
         </form>
-        <div><img src="https://www.seekpng.com/png/full/851-8514387_cute-sticker-corgi-sticker.png" alt="Corgi!" class="corgi">
-    </div>
+        <div><img src="https://www.seekpng.com/png/full/851-8514387_cute-sticker-corgi-sticker.png" alt="Corgi!"
+                class="corgi">
+        </div>
     </div>
     <h2>Journal Entries</h2>
-<article id="entries" class="journalContainer"></article>
-
+    <article id="entries" class="journalContainer"></article>
     </main>
     <footer></footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>

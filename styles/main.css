@@ -4,19 +4,22 @@
     flex-wrap: wrap;
     justify-content: space-evenly
 }
+
 .entryForm {
     width: 17em;
     outline: 3px solid grey;
-    outline-offset:5px;
+    outline-offset: 5px;
     border-radius: 0.5em;
     background-color: #080808;
     margin: 5px;
 }
-body{
+
+body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: darkslategray;
     color: white;
 }
+
 h1 {
     height: 30px;
     background-color: #080808;
@@ -26,10 +29,11 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     outline: 3px solid grey;
-    outline-offset:5px;
+    outline-offset: 5px;
     border-radius: 0.5em;
     padding-bottom: 5px;
 }
+
 h2 {
     height: 30px;
     background-color: #080808;
@@ -39,24 +43,28 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     outline: 3px solid grey;
-    outline-offset:5px;
+    outline-offset: 5px;
     border-radius: 0.5em;
 }
+
 .corgi {
     width: 17em;
 }
+
 .submitButton {
     margin: 10px;
 }
-.singleQuote{
+
+.singleQuote {
     width: 250px;
     margin: 10px;
     background-color: black;
     outline: 3px solid grey;
-    outline-offset:5px;
+    outline-offset: 5px;
     border-radius: 0.5em;
     padding: 10px 20px;
 }
+
 .journalContainer {
     margin-left: auto;
     margin-right: auto;
@@ -70,17 +78,19 @@ h2 {
     background-color: #26282B;
     color: white;
 }
-.entryButtons:hover{
+
+.entryButtons:hover {
     background-color: grey;
 }
+
 #removeButton {
-float: right;
+    float: right;
 }
 
 #editButton {
-float: left;
+    float: left;
 }
 
-.formEntrys{
+.formEntrys {
     margin: 10px;
 }
