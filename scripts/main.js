@@ -15,7 +15,7 @@ import { addNewJournalEntry } from "./journalEntrys.js"
 const displayQuotes = () => {
     const journalEntrys = getJournalEntrys()
     let quotesHtml = ""
-    for (let entry of journalEntrys) {
+    journalEntrys.forEach(entry => {
         quotesHtml += `<div class="singleQuote">
     <p>${entry.date}</p>
     <p>${entry.concept}</p>
@@ -24,7 +24,7 @@ const displayQuotes = () => {
     <button class="entryButtons" id="editButton">Edit</button>
     <button class="entryButtons" id="removeButton">Remove</button>
     </div>`
-    }
+    })
     document.getElementById('entries').innerHTML = quotesHtml
 };
 displayQuotes()
