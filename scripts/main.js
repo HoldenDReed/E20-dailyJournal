@@ -1,4 +1,5 @@
 import { getJournalEntrys } from "./journalEntrys.js"
+import { addNewJournalEntry } from "./journalEntrys.js"
 // getJournalEntrys = journal
 // journalEntrys.forEach(function(journalEntrys){
 //     console.log(journalEntrys)
@@ -11,7 +12,7 @@ import { getJournalEntrys } from "./journalEntrys.js"
 //         console.log(journal.id);
 //      }
 // }
-const diplayQuotes = () => {
+const displayQuotes = () => {
     const journalEntrys = getJournalEntrys()
     let quotesHtml = ""
     for (let entry of journalEntrys) {
@@ -25,8 +26,33 @@ const diplayQuotes = () => {
     </div>`
     }
     document.getElementById('entries').innerHTML = quotesHtml
-}
+};
+displayQuotes()
 
-diplayQuotes()
+document.addEventListener("click", (e) => {
+    if (e.target.id === "submitJournalEntry") {
+      // Need logic to get all the values from the form, 
+      // format them into an object and add that object to the `orders` array in `orders.js`
+      const dateElement = document.querySelector("input[name=entryDate")?.value
 
+      const conceptElement= document.querySelector("input[name=conceptCovered")?.value
 
+      const entryElement =  document.getElementById("journalEntry")?.value
+
+      const moodElement = document.querySelector("input[name=moods")?.value
+    
+      let newJournalEntry =
+      {
+        date: dateElement,
+        concept: conceptElement,
+        entry: entryElement,
+        mood: moodElement
+      }
+      console.log(newJournalEntry)
+      addNewJournalEntry(newJournalEntry)
+    }
+});
+    
+document.addEventListener("stateChanged", event => {
+    displayQuotes()
+  })
