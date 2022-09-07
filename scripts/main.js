@@ -30,6 +30,7 @@ const displayQuotes = () => {
 displayQuotes()
 
 document.addEventListener("click", (e) => {
+ 
     if (e.target.id === "submitJournalEntry") {
       // Need logic to get all the values from the form, 
       // format them into an object and add that object to the `orders` array in `orders.js`
