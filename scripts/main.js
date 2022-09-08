@@ -40,7 +40,7 @@ document.addEventListener("click", (e) => {
 
       const entryElement =  document.getElementById("journalEntry")?.value
 
-      const moodElement = document.querySelector("input[name=moods")?.value
+      const moodElement = document.getElementById("moods")?.value
     
       let newJournalEntry =
       {
