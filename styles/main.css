@@ -10,7 +10,7 @@
     outline: 3px solid grey;
     outline-offset: 5px;
     border-radius: 0.5em;
-    background-color: #080808;
+    background-color: black;
     margin: 5px;
 }
 
@@ -22,7 +22,7 @@ body {
 
 h1 {
     height: 30px;
-    background-color: #080808;
+    background-color: black;
     width: 50%;
     text-align: center;
     padding-top: 10px;
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
     height: 30px;
-    background-color: #080808;
+    background-color: black;
     width: 40%;
     text-align: center;
     padding-top: 10px;
