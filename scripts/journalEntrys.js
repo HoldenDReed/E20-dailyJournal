@@ -1,4 +1,4 @@
-import { getJournalEntrys, addNewJournalEntry } from "./database.js"
+import { getJournalEntrys, addNewJournalEntry, deleteJournalEntry } from "./database.js"
 
 export const displayQuotes = () => {
     const journalEntrys = getJournalEntrys()
@@ -10,7 +10,7 @@ export const displayQuotes = () => {
     <p>${entry.entry}</p>
     <p>${entry.mood}</p>
     <button class="entryButtons" id="editButton">Edit</button>
-    <button class="entryButtons" id="removeButton">Remove</button>
+    <button class="entryButtons" class="buttonRemove" id="removeButton--${entry.id}">Remove</button>
     </div>`
     })
     return quotesHtml
@@ -40,7 +40,13 @@ document.addEventListener("click", (e) => {
       addNewJournalEntry(newJournalEntry)
     }
 });
-    
+
+document.addEventListener("click", click => {
+    if (click.target.id.startsWith("removeButton--")) {
+        const [,journalEntryId] = click.target.id.split("--")
+        deleteJournalEntry(parseInt(journalEntryId))
+    }
+})
 // document.getElementById('quotes').innerHTML = htmlQuotes
 //     {
 //         id: 1,

@@ -27,3 +27,9 @@ export const fetchJournalEntrys = async () => {
         document.dispatchEvent(new CustomEvent("stateChanged"))
         return responseJson
       }
+      
+      export const deleteJournalEntry = async (id) => {
+        await fetch(`${API}/journalEntrys/${id}`, { method: "DELETE" })
+        document.dispatchEvent(new CustomEvent("stateChanged"))
+      }
+      

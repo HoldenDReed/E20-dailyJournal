@@ -83,7 +83,7 @@ h2 {
     background-color: grey;
 }
 
-#removeButton {
+.buttonRemove {
     float: right;
 }
 
