@@ -10,7 +10,7 @@ export const displayQuotes = () => {
     <p>${entry.entry}</p>
     <p>${entry.mood}</p>
     <button class="entryButtons" id="editButton">Edit</button>
-    <button class="entryButtons" class="buttonRemove" id="removeButton--${entry.id}">Remove</button>
+    <button class="entryButtons buttonRemove" id="removeButton--${entry.id}">Remove</button>
     </div>`
     })
     return quotesHtml
